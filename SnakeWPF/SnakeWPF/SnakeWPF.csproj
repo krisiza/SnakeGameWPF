@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9BBCE0C6-E318-4684-A111-351364D4B27F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SnakeWPF</RootNamespace>
+    <AssemblyName>SnakeWPF</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Obstacles.cs" />
+    <Compile Include="Snake.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fruits.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Snake\nahtloses-strukturiertes-gras-naturrasenmuster_172107-1308.webp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 und x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\cherry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\banana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\yellowmonster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\newHead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\newHeadlinks.png" />
+    <Resource Include="Image\newHeadoben.png" />
+    <Resource Include="Image\newHeadrechts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\1liks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\rasen.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\grass.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Snake\apple.jpg" />
+    <Resource Include="Snake\baba.png" />
+    <Resource Include="Snake\bush2.png" />
+    <Resource Include="Snake\bush3.png" />
+    <Resource Include="Snake\bushs1.png" />
+    <Resource Include="Snake\cherry.png" />
+    <Resource Include="Snake\grass.jpg.png" />
+    <Resource Include="Snake\greenMonster.jpg" />
+    <Resource Include="Snake\Körper up.png" />
+    <Resource Include="Snake\SnakeHeaddown.png" />
+    <Resource Include="Snake\SnakeHeadliks.png" />
+    <Resource Include="Snake\SnakeHeadlrechts.png" />
+    <Resource Include="Snake\SnakeHeadup.png" />
+    <Resource Include="Snake\yellowmonster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Snake\Körper liks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Snake\redMonster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\20.jpg" />
+    <Resource Include="Image\30.png" />
+    <Resource Include="Image\4.jpg" />
+    <Resource Include="Image\8.png" />
+    <Resource Include="Image\bush.jpg" />
+    <Resource Include="Image\bush2.jpg" />
+    <Resource Include="Image\bush3.png" />
+    <Resource Include="Image\Cartoon-monster-flying-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Snake\newHeadlinks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\apple new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\cherrynew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\BananaNewww.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Cute-Monster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Cute-Monster-PNG-File.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\neneww.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\bodynewww.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

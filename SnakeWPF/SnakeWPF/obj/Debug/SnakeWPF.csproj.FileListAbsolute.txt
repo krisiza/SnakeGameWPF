@@ -1,0 +1,16 @@
+C:\Users\kristiyana.za\source\repos\SnakeWPF\SnakeWPF\bin\Debug\SnakeWPF.exe.config
+C:\Users\kristiyana.za\source\repos\SnakeWPF\SnakeWPF\bin\Debug\SnakeWPF.exe
+C:\Users\kristiyana.za\source\repos\SnakeWPF\SnakeWPF\bin\Debug\SnakeWPF.pdb
+C:\Users\kristiyana.za\source\repos\SnakeWPF\SnakeWPF\obj\Debug\SnakeWPF.csproj.AssemblyReference.cache
+C:\Users\kristiyana.za\source\repos\SnakeWPF\SnakeWPF\obj\Debug\SnakeWPF.csproj.SuggestedBindingRedirects.cache
+C:\Users\kristiyana.za\source\repos\SnakeWPF\SnakeWPF\obj\Debug\MainWindow.g.cs
+C:\Users\kristiyana.za\source\repos\SnakeWPF\SnakeWPF\obj\Debug\App.g.cs
+C:\Users\kristiyana.za\source\repos\SnakeWPF\SnakeWPF\obj\Debug\SnakeWPF_MarkupCompile.cache
+C:\Users\kristiyana.za\source\repos\SnakeWPF\SnakeWPF\obj\Debug\SnakeWPF_MarkupCompile.lref
+C:\Users\kristiyana.za\source\repos\SnakeWPF\SnakeWPF\obj\Debug\MainWindow.baml
+C:\Users\kristiyana.za\source\repos\SnakeWPF\SnakeWPF\obj\Debug\SnakeWPF.g.resources
+C:\Users\kristiyana.za\source\repos\SnakeWPF\SnakeWPF\obj\Debug\SnakeWPF.Properties.Resources.resources
+C:\Users\kristiyana.za\source\repos\SnakeWPF\SnakeWPF\obj\Debug\SnakeWPF.csproj.GenerateResource.cache
+C:\Users\kristiyana.za\source\repos\SnakeWPF\SnakeWPF\obj\Debug\SnakeWPF.csproj.CoreCompileInputs.cache
+C:\Users\kristiyana.za\source\repos\SnakeWPF\SnakeWPF\obj\Debug\SnakeWPF.exe
+C:\Users\kristiyana.za\source\repos\SnakeWPF\SnakeWPF\obj\Debug\SnakeWPF.pdb
